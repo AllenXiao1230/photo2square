@@ -32,8 +32,8 @@ for file_name in link_list:
     else:
         #直
 
-        ft = ft.resize((int(ft.size[1] * 1920 / ft.size[0]), 1920))
-        bg.paste(ft, (960 - int(ft.size[1] / 2), 0))
+        ft = ft.resize((int(ft.size[0] * 1920 / ft.size[1]), 1920))
+        bg.paste(ft, (960 - int(ft.size[0] / 2), 0))
 
         bg.save('output\\' + file_name + ".jpg")
 
